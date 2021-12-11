@@ -1,0 +1,368 @@
+{
+	"info": {
+		"_postman_id": "7ba1afe2-f9b0-47b1-a006-58baaecf27dd",
+		"name": "Etkinlik.io",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Etkinlik Listesi",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "X-Etkinlik-Token",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://backend.etkinlik.io/api/v2/events?format_ids=&category_ids=&venue_ids=&city_ids=&skip=&take=50",
+					"protocol": "https",
+					"host": [
+						"backend",
+						"etkinlik",
+						"io"
+					],
+					"path": [
+						"api",
+						"v2",
+						"events"
+					],
+					"query": [
+						{
+							"key": "format_ids",
+							"value": ""
+						},
+						{
+							"key": "category_ids",
+							"value": ""
+						},
+						{
+							"key": "venue_ids",
+							"value": ""
+						},
+						{
+							"key": "city_ids",
+							"value": ""
+						},
+						{
+							"key": "skip",
+							"value": ""
+						},
+						{
+							"key": "take",
+							"value": "50"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SearchQuery",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "X-Etkinlik-Token",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://etkinlik.io/api/search?query=sold%20out",
+					"protocol": "https",
+					"host": [
+						"etkinlik",
+						"io"
+					],
+					"path": [
+						"api",
+						"search"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "sold%20out"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Izmir Etkinlik Listesi",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "e33b5856039cf516abecd3c9cb040421",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "X-Etkinlik-Token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://backend.etkinlik.io/api/v2/events?city_ids=41",
+					"protocol": "https",
+					"host": [
+						"backend",
+						"etkinlik",
+						"io"
+					],
+					"path": [
+						"api",
+						"v2",
+						"events"
+					],
+					"query": [
+						{
+							"key": "city_ids",
+							"value": "41"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Dans ve Müzikal Gösteriler Etkinlik Detay",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "e33b5856039cf516abecd3c9cb040421",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "X-Etkinlik-Token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://backend.etkinlik.io/api/v2/events?category_ids=3974",
+					"protocol": "https",
+					"host": [
+						"backend",
+						"etkinlik",
+						"io"
+					],
+					"path": [
+						"api",
+						"v2",
+						"events"
+					],
+					"query": [
+						{
+							"key": "category_ids",
+							"value": "3974"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sehir Listesi",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "e33b5856039cf516abecd3c9cb040421",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "X-Etkinlik-Token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://backend.etkinlik.io/api/v2/cities",
+					"protocol": "https",
+					"host": [
+						"backend",
+						"etkinlik",
+						"io"
+					],
+					"path": [
+						"api",
+						"v2",
+						"cities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Izmir Ilceler Sonuc Kontrolu",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "e33b5856039cf516abecd3c9cb040421",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "X-Etkinlik-Token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "OPTIONS",
+				"header": [],
+				"url": {
+					"raw": "https://backend.etkinlik.io/api/v2/cities/41/districts",
+					"protocol": "https",
+					"host": [
+						"backend",
+						"etkinlik",
+						"io"
+					],
+					"path": [
+						"api",
+						"v2",
+						"cities",
+						"41",
+						"districts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Izmir Ilceler",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "e33b5856039cf516abecd3c9cb040421",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "X-Etkinlik-Token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://backend.etkinlik.io/api/v2/cities/41/districts",
+					"protocol": "https",
+					"host": [
+						"backend",
+						"etkinlik",
+						"io"
+					],
+					"path": [
+						"api",
+						"v2",
+						"cities",
+						"41",
+						"districts"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,223 @@
+{
+	"info": {
+		"_postman_id": "bcc5d233-6a5a-4d8b-875c-6cb9eab7afe3",
+		"name": "DemoBlaze",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "SignUp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"username\": \"doruk\",\n  \"password\": \"dW5sZXI=\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.demoblaze.com/signup",
+					"protocol": "https",
+					"host": [
+						"api",
+						"demoblaze",
+						"com"
+					],
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.demoblaze.com/signup",
+					"protocol": "https",
+					"host": [
+						"api",
+						"demoblaze",
+						"com"
+					],
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cart",
+			"request": {
+				"method": "OPTIONS",
+				"header": [],
+				"url": {
+					"raw": "https://api.demoblaze.com/viewcart",
+					"protocol": "https",
+					"host": [
+						"api",
+						"demoblaze",
+						"com"
+					],
+					"path": [
+						"viewcart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PhonesCat",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.demoblaze.com/entries",
+					"protocol": "https",
+					"host": [
+						"api",
+						"demoblaze",
+						"com"
+					],
+					"path": [
+						"entries"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ViewCart",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"cookie\": \"user=9a98de14-4990-98fb-184b-c66eff524e4d\",\n  \"flag\": false\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.demoblaze.com/viewcart",
+					"protocol": "https",
+					"host": [
+						"api",
+						"demoblaze",
+						"com"
+					],
+					"path": [
+						"viewcart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddToCart",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "WrongPassword",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"username\": \"doruk2\",\n  \"password\": \"eXVubGVy\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.demoblaze.com/login",
+					"protocol": "https",
+					"host": [
+						"api",
+						"demoblaze",
+						"com"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserDoesNotExist",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"username\": \"dorukd\",\n  \"password\": \"dW5sZXI=\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.demoblaze.com/login",
+					"protocol": "https",
+					"host": [
+						"api",
+						"demoblaze",
+						"com"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pagination",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.demoblaze.com/pagination",
+					"protocol": "https",
+					"host": [
+						"api",
+						"demoblaze",
+						"com"
+					],
+					"path": [
+						"pagination"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}
