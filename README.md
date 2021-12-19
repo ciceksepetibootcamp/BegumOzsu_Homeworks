@@ -18,3 +18,15 @@
   - demoblaze.com
   - etkinlik.io
   - nasa.api 
+
+**Week3**
+- RestAssured Api Testi yapildi. Mock DB ile asagidaki testler uygulandi. 
+  - Favori sarkicilar, sarkilar listesi yapildi
+  - Favori sarkilar, sarkicilar listesine ekleme yapildi
+  - Silme islemi uygulandi
+  - Bazi data'larin yalnizca bir degeri degistirildi. 
+  - Bazi data'lar tamamen farkli bir deger ile degistirildi
+- Cucumber ile Wizarding World Web sitesi icin asagidaki uc test uygulandi 
+  - Wizarding World sitesine girilir
+  - Basarili bir sekilde login olunur
+  - Yanlis email/password ile login olunmadigi gorulur. 
